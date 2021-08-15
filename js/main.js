@@ -290,7 +290,7 @@
       position: absolute;
       top: 189px;
       left: 30%;
-      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
       width: 150px;
       height: 150px;
       display: flex;
@@ -315,12 +315,12 @@
       background: radial-gradient(circle, white 10px, pink 10px), pink;
       background-size: 10px 40px;
       background-position-x: 10px;
-      transform: translateX(25px);
+      -webkit-transform: translateX(25px);
     }
     /* 三层 */
     .cake .layer.one {
       width: 50px;
-      transform: translateX(50px);
+      -webkit-transform: translateX(50px);
       background: radial-gradient(circle, white 7px, skyblue 7px), skyblue;
       background-size: 10px 40px;
     }
@@ -339,7 +339,7 @@
 
     .flame {
       border-radius: 100%;
-      box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+      box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.5);
       position: absolute;
       top: -15px;
       left: 1px;
@@ -353,23 +353,23 @@
     }
 
     .flame:nth-child(1) {
-      animation: flame 2s infinite;
+      -webkit-animation: flame 2s infinite;
     }
 
     .flame:nth-child(2) {
-      animation: flame 1.5s infinite;
+      -webkit-animation: flame 1.5s infinite;
     }
 
     .flame:nth-child(3) {
-      animation: flame 1s infinite;
+      -webkit-animation: flame 1s infinite;
     }
 
     .flame:nth-child(4) {
-      animation: flame 0.5s infinite;
+      -webkit-animation: flame 0.5s infinite;
     }
 
     .flame:nth-child(5) {
-      animation: flame 0.2s infinite;
+      -webkit-animation: flame 0.2s infinite;
     }
   
     /* 
@@ -378,20 +378,20 @@
         点亮蜡烛许愿啦！！！
     */
 
-    @keyframes flame {
+    @-webkit-keyframes flame {
       0% {
         background: rgba(254, 248, 97, 0.5);
-        transform: translateY(0) scale(1.1);
+        -webkit-transform: translateY(0) scale(1.1);
       }
 
       50% {
         background: rgba(255, 50, 0, 0.1);
-        transform: translateY(-15px) scale(0);
+        -webkit-transform: translateY(-15px) scale(0);
       }
 
       100% {
         background: rgba(254, 248, 97, 0.5);
-        transform: translateY(0) scale(1.1);
+        -webkit-transform: translateY(0) scale(1.1);
       }
     }
 `
