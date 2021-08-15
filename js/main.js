@@ -339,7 +339,7 @@
 
     .flame {
       border-radius: 100%;
-      box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.5);
+      box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.6);
       position: absolute;
       top: -15px;
       left: 1px;
